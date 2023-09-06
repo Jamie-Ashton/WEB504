@@ -1,16 +1,35 @@
-.body {
-    margin: 60px;
+* {
+    box-sizing: border-box
+}
+body {
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 
 }
-.side-nav-one {
-    grid-area: side-nav-one;
+.container {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    width: 800px;
 }
-.side-nav-two {
-    grid-area: side-nav-two;
+aside {
+    padding: 20px;
+    width: 250px;
+    border-right: 1px solid pink;
 }
-.content {
-    grid-area: content;
+button {
+    cursor: pointer;
+    background: white;
+    border: solid 2px red;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
 }
-.footer {
-    grid-area: footer;
-}
+
