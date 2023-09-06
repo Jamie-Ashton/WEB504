@@ -1,0 +1,6 @@
+const main = document.getElementById('main')
+const adduserbtn = document.getElementById('add-user')
+const doublebtn = document.getElementById('double')
+cont showmillionairesbtn = document.getElementById('show-millionaires')
+cont sortBtn = document.getElementById('sort')
+const calculatWealthBtn = document.getElementById('calculate-wealth')
