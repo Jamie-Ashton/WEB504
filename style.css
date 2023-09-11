@@ -1,16 +1,1 @@
-.body {
-    margin: 60px;
 
-}
-.side-nav-one {
-    grid-area: side-nav-one;
-}
-.side-nav-two {
-    grid-area: side-nav-two;
-}
-.content {
-    grid-area: content;
-}
-.footer {
-    grid-area: footer;
-}
