@@ -1,35 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 body {
-    background-color: blue;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+    background-image: linear-gradient(
+        @img,
+        rgba(247, 247, 247, 1) 23.8%
+        rgba(252, 223, 221, 1) 92%
+    );
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+font-family: 'courier new, courier, monospace'
+margin: 0;
+}
 
-}
-.container {
+.music-player {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
     display: flex;
-    padding: 20px;
-    margin: auto;
-    width: 800px;
+    padding: 20px 30px;
+    position: relative;
+    max-width: 100px 0;
+    z-index: 10;
 }
-aside {
-    padding: 20px;
-    width: 250px;
-    border-right: 1px solid pink;
+
+.log-container {
+    position: relative;
+    width: 110px;
 }
-button {
-    cursor: pointer;
-    background: white;
-    border: solid 2px red;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 10px;
+.img-container::after {
+    container: '';
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
 }
+
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotates 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container {
+    animation-play-state: running;
+}
+
+
 
